@@ -12,8 +12,9 @@ _Github is similar to Git, however, Git can be used to keep track of changes as 
 ---
 ## Initial Setup
 1. Go to [Github](http://www.github.com) website
-2. Select FREE plan
-3. You now have a Github account! 
+2. Create an username and password
+3. Select FREE plan
+4. You now have a Github account! 
 
 SSH Key (**S**ecure **Sh**ell) does not require the user to enter login information every time 
 
