@@ -21,11 +21,9 @@ SSH Key (**S**ecure **Sh**ell) does not require the user to enter login informat
 2. In settings (on the left side) select SSH key 
 3. Click 'Add SSH Key' 
 4. Add title and copy the SSH key (starts with ssh-rsa) from where you want to link (In this case, we are using Cloud 9)
-5. Open IDE and type in `ssh -T git@github.com`
+5. Open IDE and type in `ssh -T git@github.com`  
 
-
-
-`git config` 
+`git config` (to set up user.name and user.email): used when collaborating on projects in order to get credit for your contribution  
 
 
 
