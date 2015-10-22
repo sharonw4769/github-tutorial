@@ -70,5 +70,6 @@ Github _does_ require Git
 * `git push -u`: send committed changes from local repository to remote repository (Github)  
 The `-u` stands for "upstream" which will remember where to push the changes to (done once and then you can use `git push`) 
 ---
+
 ## Error Handling
 If by any chance, you intialized (`git init`) the wrong directory, just `cd` to get out of where you currently are (you can cd back into main folder by doing `cd ..`) and them type in `rm -rf (folder name)` to forcefully removes the file/directory. 
