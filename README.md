@@ -72,4 +72,4 @@ The `-u` stands for "upstream" which will remember where to push the changes to 
 
 ---
 ## Error Handling
-If by any chance, you intialized (`git init`) the wrong directory, just `cd` to get out of where you currently are (you can cd back into main folder by doing `cd ..`) and them type in `rm -rf (folder name)` to forcefully removes the file/directory. 
+If by any chance, you initialized (`git init`) the wrong directory, just `cd` to get out of where you currently are (you can cd back into main folder by doing `cd ..`) and then type in `rm -rf (folder name)` to forcefully removes the file/directory. 
