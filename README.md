@@ -16,8 +16,8 @@ Github _does_ require Git
 3. Select FREE plan
 4. You now have a Github account!  
 
-HTTPS stands for (**H**ypertext **T**ransfer **P**rotocol **S**ecure) requires the user to enter login information _EVERY TIME_  
-SSH Key (**S**ecure **Sh**ell) does not require the user to enter login information
+**HTTPS** stands for (**H**ypertext **T**ransfer **P**rotocol **S**ecure) requires the user to enter login information _EVERY TIME_  
+**SSH Key** (**S**ecure **Sh**ell) does not require the user to enter login information
 
 1. Log in onto Github
 2. In settings (on the left side) select SSH key 
@@ -26,7 +26,7 @@ SSH Key (**S**ecure **Sh**ell) does not require the user to enter login informat
 5. Open IDE and type in `ssh -T git@github.com` then type in "yes"  
 
 `git config` (to set up login information [user.name and user.email]): used when collaborating on projects in order to get credit for your contribution  
-The code to submit your login information is:  
+#### The code to submit your login information is:  
 `git config --global user.name “First Last”`  
 `git config --global user.email “Email Address”`
 
@@ -41,7 +41,7 @@ The code to submit your login information is:
 5. Once the directory is created, add a new file (e.g. README.md) and once you open this file, you can add and edit the text inside   
 
 #### IMPORTANT: Save/Add/Commit  
-- (Auto-save is **recommended**)  
+- Save any changed made (_Auto-save_ is **recommended**)  
 - Use `git add [file]` in order to add any file(s) 
 - Use `git commit -m "(message)"` to display a mini message  
 
@@ -54,3 +54,17 @@ The code to submit your login information is:
 
 ---
 ## Workflow & Commands
+`git status` is used to make sure there is no errors in the code   
+- (frequent use of this command is **recommended**)
+
+#### The Process of _adding, committing,_ & _pushing_ 
+* `git add`: add any 'new' file(s)  
+
+**3 ways to add files**  
+1. `git add [file(s)] ` - add committed file(s)   
+2. `git add --all` - add ALL files  
+3. `git add .` - add everything
+
+
+* `git commit -m "(message)"`: allows user to add a short/specific message so they can refer back to this change (message should be _present-tense_ and specifically describe and answer _What work/change was done_?) 
+* `git push`: send committed changes from local repository to remote repository (Github)
