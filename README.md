@@ -7,7 +7,7 @@ _by Sharon Wong_
 Git _does not_ require Github  
 **Github** is a collaborative site that stores code and visually keeps track of any changes made  
 Github _does_ require Git  
-** _Github is similar to Git, however, Git can be used to keep track of changes as well as any errors or bugs_**
+**_Github is similar to Git, however, Git can be used to keep track of changes as well as any errors or bugs_**
 
 ---
 ## Initial Setup
@@ -32,11 +32,25 @@ The code to submit your login information is:
 
 ---
 ## Repository Setup
-`init`  
-first `add` & `commit`  
-new repo on github  
-remote
+#### Create the directory by following these steps:   
+1. In IDE, type in `mkdir (insert the name of file)`  
+2. Go inside this folder by typing in `cd (whatever is the name of the file)`  
+3. Type `git init` to initialize and create the first repository (this is usually done once in making of a directory)  
+4. Put in login information using `git config`  
+`(--global user.name “First Last”) (--global user.email “Email Address”)`  
+5. Once the directory is created, add a new file (e.g. README.md) and once you open this file, you can add and edit the text inside   
 
+#### IMPORTANT: Save/Add/Commit  
+- (Auto-save is **recommended**)  
+- Use `git add [file]` in order to add any file(s) 
+- Use `git commit -m "(message)"` to display a mini message  
+
+#### Making a new repo on Github  
+1. On your Github account, (top right) there is a (+) sign that allows you to create a new repository
+2. Press on "New Repository" and then fill out the folder information  
+
+#### What is a remote?
+* A remote is used to link the repository to Github so that it can be visually presented live
 
 ---
 ## Workflow & Commands
