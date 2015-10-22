@@ -69,7 +69,7 @@ Github _does_ require Git
 * `git commit -m "(message)"`: allows user to add a short/specific message so they can refer back to this change (message should be _present-tense_ and specifically describe and answer _What work/change was done_?) 
 * `git push -u`: send committed changes from local repository to remote repository (Github)  
 The `-u` stands for "upstream" which will remember where to push the changes to (done once and then you can use `git push`) 
----
 
+---
 ## Error Handling
 If by any chance, you intialized (`git init`) the wrong directory, just `cd` to get out of where you currently are (you can cd back into main folder by doing `cd ..`) and them type in `rm -rf (folder name)` to forcefully removes the file/directory. 
