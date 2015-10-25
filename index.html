@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>GitHub Tutorial by sharonw4769</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/sharonw4769/github-tutorial">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>GitHub Tutorial</h1>
+            <h2>COME AND GIT IT!</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/sharonw4769/github-tutorial/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/sharonw4769/github-tutorial/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>
+<a id="github-tutorial" class="anchor" href="#github-tutorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub Tutorial</h1>
+
+<p><em>by Sharon Wong</em></p>
+
+<hr>
+
+<h2>
+<a id="git-vs-github" class="anchor" href="#git-vs-github" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git vs. GitHub</h2>
+
+<p><strong>Git</strong> is the version control that keeps track of all changes made<br>
+Git <em>does not</em> require Github<br>
+<strong>Github</strong> is a collaborative site that stores code and visually keeps track of any changes made<br>
+Github <em>does</em> require Git<br>
+<strong><em>Github is similar to Git, however, Git can be used to keep track of changes as well as any errors or bugs</em></strong></p>
+
+<hr>
+
+<h2>
+<a id="initial-setup" class="anchor" href="#initial-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Initial Setup</h2>
+
+<ol>
+<li>Go to <a href="http://www.github.com">Github</a> website</li>
+<li>Create an username and password</li>
+<li>Select FREE plan</li>
+<li>You now have a Github account!<br>
+</li>
+</ol>
+
+<p><strong>HTTPS</strong> stands for (<strong>H</strong>ypertext <strong>T</strong>ransfer <strong>P</strong>rotocol <strong>S</strong>ecure) requires the user to enter login information <em>EVERY TIME</em><br>
+<strong>SSH Key</strong> (<strong>S</strong>ecure <strong>Sh</strong>ell) does not require the user to enter login information</p>
+
+<ol>
+<li>Log in onto Github</li>
+<li>In settings (on the left side) select SSH key </li>
+<li>Click 'Add SSH Key' </li>
+<li>Add title and copy the SSH key (starts with ssh-rsa) from where you want to link (in this case, we are using Cloud 9)</li>
+<li>Open IDE and type in <code>ssh -T git@github.com</code> then type in "yes"<br>
+</li>
+</ol>
+
+<p><code>git config</code> (to set up login information [user.name and user.email]): used when collaborating on projects in order to get credit for your contribution  </p>
+
+<h4>
+<a id="the-code-to-submit-your-login-information-is" class="anchor" href="#the-code-to-submit-your-login-information-is" aria-hidden="true"><span class="octicon octicon-link"></span></a>The code to submit your login information is:</h4>
+
+<p><code>git config --global user.name “First Last”</code><br>
+<code>git config --global user.email “Email Address”</code></p>
+
+<hr>
+
+<h2>
+<a id="repository-setup" class="anchor" href="#repository-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Repository Setup</h2>
+
+<h4>
+<a id="create-the-directory-by-following-these-steps" class="anchor" href="#create-the-directory-by-following-these-steps" aria-hidden="true"><span class="octicon octicon-link"></span></a>Create the directory by following these steps:</h4>
+
+<ol>
+<li>In IDE, type in <code>mkdir (insert the name of file)</code><br>
+</li>
+<li>Go inside this folder by typing in <code>cd (whatever is the name of the file)</code><br>
+</li>
+<li>Type <code>git init</code> to initialize and create the first repository (this is usually done once in making of a directory)<br>
+</li>
+<li>Put in login information using <code>git config</code><br>
+<code>(--global user.name “First Last”) (--global user.email “Email Address”)</code><br>
+</li>
+<li>Once the directory is created, add a new file (e.g. README.md) and once you open this file, you can add and edit the text inside<br>
+</li>
+</ol>
+
+<h4>
+<a id="important-saveaddcommit" class="anchor" href="#important-saveaddcommit" aria-hidden="true"><span class="octicon octicon-link"></span></a>IMPORTANT: Save/Add/Commit</h4>
+
+<ul>
+<li>Save any changed made (<em>Auto-save</em> is <strong>recommended</strong>)<br>
+</li>
+<li>Use <code>git add [file]</code> in order to add any file(s) </li>
+<li>Use <code>git commit -m "(message)"</code> to display a mini message<br>
+</li>
+</ul>
+
+<h4>
+<a id="making-a-new-repo-on-github" class="anchor" href="#making-a-new-repo-on-github" aria-hidden="true"><span class="octicon octicon-link"></span></a>Making a new repo on Github</h4>
+
+<ol>
+<li>On your Github account, (top right) there is a (+) sign that allows you to create a new repository</li>
+<li>Press on "New Repository" and then fill out the folder information<br>
+</li>
+</ol>
+
+<h4>
+<a id="what-is-a-remote" class="anchor" href="#what-is-a-remote" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is a remote?</h4>
+
+<ul>
+<li>A remote is used to link the repository to Github so that it can be visually presented live</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="workflow--commands" class="anchor" href="#workflow--commands" aria-hidden="true"><span class="octicon octicon-link"></span></a>Workflow &amp; Commands</h2>
+
+<p><code>git status</code> is used to make sure there is no errors in the code   </p>
+
+<ul>
+<li>(frequent use of this command is <strong>recommended</strong>)</li>
+</ul>
+
+<h4>
+<a id="the-process-of-adding-committing--pushing" class="anchor" href="#the-process-of-adding-committing--pushing" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Process of <em>adding, committing,</em> &amp; <em>pushing</em>
+</h4>
+
+<ul>
+<li>
+<code>git add</code>: add any 'new' file(s)<br>
+</li>
+</ul>
+
+<p><strong>3 ways to add files</strong><br>
+1. <code>git add [file(s)]</code> - add committed file(s)<br>
+2. <code>git add --all</code> - add ALL files<br>
+3. <code>git add .</code> - add everything</p>
+
+<ul>
+<li>
+<code>git commit -m "(message)"</code>: allows user to add a short/specific message so they can refer back to this change (message should be <em>present-tense</em> and specifically describe and answer <em>What work/change was done</em>?) </li>
+<li>
+<code>git push -u</code>: send committed changes from local repository to remote repository (Github)<br>
+The <code>-u</code> stands for "upstream" which will remember where to push the changes to (done once and then you can use <code>git push</code>) </li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="error-handling" class="anchor" href="#error-handling" aria-hidden="true"><span class="octicon octicon-link"></span></a>Error Handling</h2>
+
+<p>If by any chance, you initialized (<code>git init</code>) the wrong directory, just <code>cd</code> to get out of where you currently are (you can cd back into main folder by doing <code>cd ..</code>) and then type in <code>rm -rf (folder name)</code> to forcefully removes the file/directory. </p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/sharonw4769">sharonw4769</a> can be found on <a href="https://github.com/sharonw4769/github-tutorial">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
